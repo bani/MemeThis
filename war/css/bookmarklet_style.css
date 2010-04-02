@@ -1,0 +1,145 @@
+#div_memethis_overlay a,#div_memethis_overlay form {
+  background-color: transparent !important;
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  color: #fff;
+  font-weight: bold;
+  font-variant: normal;
+  text-transform: none;
+}
+
+#div_memethis_overlay textarea {
+  margin-bottom: 12px;
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  color: #000;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  width: 270px;
+  height: 48px;
+  overflow:hidden;
+}
+
+#div_memethis_overlay table,#div_memethis_overlay tr,#div_memethis_overlay td {
+  border-style:none;
+  border-width:0px;
+  padding:0px;
+  margin:0px;
+}
+
+#div_memethis_overlay td {
+  width:50px;
+  height:50px;
+  padding:1px;
+  vertical-align: middle;
+  text-align: center;
+  background: #853eaa !important;
+}
+
+#div_memethis_overlay td.memethis_selected img {
+  border: 4px double white;
+}
+#div_memethis_overlay #memethis_table {
+  height: 160px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#div_memethis_overlay img {
+  padding: 0px;
+  border: 0px;
+  margin:0px;
+}
+
+
+#div_memethis_overlay input[type="submit"] {
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  color: #000;
+  font-weight: bold;
+  font-variant: normal;
+  text-transform: none;
+  width: 125px;
+  height:20px;
+  padding:0px;
+  margin:0px;
+  margin-left: 76px;
+}
+
+#div_memethis_overlay a {
+  color: #fff;
+  outline: none !important;
+  text-decoration: none;
+}
+
+#img_memethis_overlay_logo {
+  float: left;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+#span_memethis_title {
+  margin-left:8px;
+  font-family: Georgia, Serif;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: bold;
+  color: #fff;
+}
+
+#div_memethis_overlay a:hover {
+  text-decoration: underline;
+}
+
+#div_memethis_overlay {
+  text-align: left; font-weight : bold;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 280px;
+  height: 100%;
+  background: #853eaa !important;
+  padding: 12px;
+  z-index: 1000000000;
+  overflow: none;
+  opacity: .95;
+  color: #fff;
+  font-weight: bold;
+}
+
+#div_memethis_overlay #btn_close {
+  position: absolute;
+  width: 20px;
+  top: 2px; right : 6px;
+  font-size: 24px;
+  right: 6px;
+}
+
+#div_memethis_message {
+  margin-top:4px;
+  width:270px;
+  text-align:center;
+  font-style:italic;
+  display:none;
+}
+
+#div_memethis_preview {
+  background: #853eaa !important;
+  border: 2px dotted white;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  display: block;
+}
+
+#img_memethis_preview {
+  display: none;
+}
+
+#memethis_bookmarklet_version {
+  font-style: italic;
+  font-size: 6pt;
+  padding-top: 10px;
+  text-align: center;
+  width: 100%;
+}

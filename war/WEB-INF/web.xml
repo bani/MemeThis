@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5">
+
+	<!-- Simpleyql stuff -->
+	<servlet>
+		<servlet-name>simpleyqlcallback</servlet-name>
+		<servlet-class>com.simpleyql.CallbackServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>simpleyqlcallback</servlet-name>
+		<url-pattern>/simpleyqlcallback</url-pattern>
+	</servlet-mapping>
+
+	<!-- Application servlets -->
+	<servlet>
+		<servlet-name>authorize</servlet-name>
+		<servlet-class>com.memethis.servlet.AuthorizeServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>generate</servlet-name>
+		<servlet-class>com.memethis.servlet.GenerateServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>meme</servlet-name>
+		<servlet-class>com.memethis.servlet.MemeServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>oldversion</servlet-name>
+		<jsp-file>/update.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>authorize</servlet-name>
+		<url-pattern>/authorize</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>generate</servlet-name>
+		<url-pattern>/generate</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>meme</servlet-name>
+		<url-pattern>/ajaxmeme</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>oldversion</servlet-name>
+		<url-pattern>/meme</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+
+	<error-page>
+		<exception-type>java.lang.RuntimeException</exception-type>
+		<location>/exception.jsp</location>
+	</error-page>
+</web-app>

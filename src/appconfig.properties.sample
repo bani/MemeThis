@@ -1,0 +1,4 @@
+# Rename this file to appconfig.properties and fill the information bellow according to the key you've generated at http://developer.yahoo.com/
+apikey.consumerkey=
+apikey.consumersecret=
+application.baseurl=
