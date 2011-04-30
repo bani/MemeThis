@@ -6,20 +6,31 @@
  	<style type="text/css" media="screen">
 		@import url( css/style.css );
 	</style>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23048726-1']);
+  _gaq.push(['_setDomainName', '.memethis.com']);
+  _gaq.push(['_trackPageview', '/success']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
  </head>
+ 
 <body>
-<div id="content">
 
-  <b class="memethis">
-  <b class="memethis1"><b></b></b>
-  <b class="memethis2"><b></b></b>
-  <b class="memethis3"></b>
-  <b class="memethis4"></b>
-  <b class="memethis5"></b></b>
 
-  <div class="memethisfg">
-	<br/>
-<h3>&nbsp; &nbsp; Success!</h3> 
+<div id="header"><img src="img/memethis-header-title.png"
+	alt="MemeThis" /></div>
+<div id="content" class="content">
+
+<div class="container">
+<h2>Success!</h2> 
 
 <p>Here is your bookmark: <a onclick="return false;" href="<%=request.getAttribute("bookmarklet")%>"><img src="img/bookmarklet.png" alt="MemeThis" width="100" height="28" border="0" style="vertical-align:middle"></a></p>
 
@@ -39,21 +50,9 @@
 
 <h5>Internet Explorer</h5>
 <ul><li>Right-click on the button above and select "Add to Favorites...". After that, you can add it to your Favorites Bar. You'll be prompted with a few security warnings because the bookmark uses JavaScript.</li></ul>
-<!--
-<h4>Learn how to use MemeThis:</h4>
-	<div align="center">
-	<object width="560" height="340"><param name="movie" value="http://www.youtube.com/v/p_4THzyxLe0&hl=en&fs=1&color1=0x402061&color2=0x9461ca"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/p_4THzyxLe0&hl=en&fs=1&color1=0x402061&color2=0x9461ca" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="560" height="340"></embed></object>
-	</div>
--->
-	<br/>
-  </div>
 
-  <b class="memethis">
-  <b class="memethis5"></b>
-  <b class="memethis4"></b>
-  <b class="memethis3"></b>
-  <b class="memethis2"><b></b></b>
-  <b class="memethis1"><b></b></b></b>
 </div>
+</div>
+
 </body>
 </html>

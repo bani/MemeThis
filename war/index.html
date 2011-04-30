@@ -1,46 +1,84 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<!-- The HTML 4.01 Transitional DOCTYPE declaration-->
-<!-- above set at the top of the file will set     -->
-<!-- the browser's rendering engine into           -->
-<!-- "Quirks Mode". Replacing this declaration     -->
-<!-- with a "Standards Mode" doctype is supported, -->
-<!-- but may lead to some differences in layout.   -->
 
 <html>
-  <head>
-  	<style type="text/css" media="screen">
-		@import url( css/style.css );
-	</style>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>MemeThis</title>
-  </head>
-  <body>
-  
-<div id="content">
-  <b class="memethis">
-  <b class="memethis1"><b></b></b>
-  <b class="memethis2"><b></b></b>
-  <b class="memethis3"></b>
-  <b class="memethis4"></b>
-  <b class="memethis5"></b></b>
+<head>
+<style type="text/css" media="screen">
+@import url( css/style.css );
+</style>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>MemeThis</title>
+<script type="text/javascript">
 
-  <div class="memethisfg">
-	<br/>
-    <h3>&nbsp; &nbsp; MemeThis: an easy way to post what you find on the web to <a href="http://meme.yahoo.com">Yahoo! Meme</a></h3>
-    <br/><br/><div align="center"><a href="authorize"><img src="img/getmemethis.png" alt="Click here to get MemeThis" title="Get MemeThis" border="0" height="128" width="256"></a></div>
-    <p style="text-align:center">You'll need to confirm to Yahoo! that you'd like to send memes from MemeThis.</p>
-    <p style="text-align:center"><a href="http://meme.yahoo.com/memethis">Follow us</a> on Yahoo! Meme for updates.</p>    
-    <p style="text-align:center; padding-top:16px;"><a href="about.html">[About]</a> &nbsp &nbsp &nbsp &nbsp <a href="faq.html">[FAQ]</a></p>
-	<br/>
-  </div>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23048726-1']);
+  _gaq.push(['_setDomainName', '.memethis.com']);
+  _gaq.push(['_trackPageview']);
 
-  <b class="memethis">
-  <b class="memethis5"></b>
-  <b class="memethis4"></b>
-  <b class="memethis3"></b>
-  <b class="memethis2"><b></b></b>
-  <b class="memethis1"><b></b></b></b>
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+
+<div id="header"><img src="img/memethis-header-title.png"
+	alt="MemeThis" /></div>
+<div id="content" class="content">
+
+<div class="container">
+
+<div class="tpl-2col">
+<div class="col col1"><img src="img/memethis-screenshot.gif"
+	alt="Screenshot of MemeThis" /></a> <br />
+<p class="subtitle"><small>it's that easy!</small></p>
+</div>
+<div class="col col2">
+<h2><strong>MemeThis</strong>: an easy way to post what you find on
+the web to <a href="http://meme.yahoo.com">Yahoo! Meme</a>.</h2>
+
+<p class="action"><a href="authorize" onclick="_gaq.push(['_trackPageview', '/get/button']);"><img src="img/memethis-get-button.png"
+	alt="Click here to get MemeThis" title="Get MemeThis" border="0"
+	height="80" width="220"></a></p>
+<p class="action">You'll need to confirm to Yahoo! that
+you'd like to<br/> send memes from MemeThis.</p>
+</div>
+</div>
+<hr>
+
+
+<div class="tpl-2col">
+<div class="col col1">
+<h4>How it works:</h4>
+    <ol>
+    <li>You <a href="authorize" onclick="_gaq.push(['_trackPageview', '/get/link']);">authorize us</a> to post to Meme under your account;</li>
+
+    <li>We generate a link that can be used to post content to your Meme;</li>
+    <li>You drag the link to your bookmarks toolbar, so that it is always easily available for you to use;</li>
+    <li>When you see something interesting, just click on MemeThis and a sidebar will appear to help you post it to your Yahoo! Meme.</li>
+    </ol>
+    <br/>
+    <p class="credits"><b>Follow <a href="http://meme.yahoo.com/memethis">MemeThis</a> for updates.</b></p>
+    <p class="credits">You can contact us at: <a href="mailto:contact@memethis.com">contact@memethis.com</a></p>
+</div>
+<div class="col col2">
+<h4>Credits</h4>
+    <p class="credits">This software was developed by <a href="http://baniverso.com">Bani</a> <a href="http://meme.yahoo.com/bani">[meme]</a> and <a href="http://chester.blog.br">Chester</a> <a href="http://meme.yahoo.com/chesterbr">[meme]</a>, using the <a href="http://simpleyql.sf.net">simpleyql</a> library. Bruno Caimar <a href="http://meme.yahoo.com/brunocaimar/">[meme]</a> has made several improvements to the user interface. Our sidebar was inspired by the <a href="http://bit.ly">bit.ly</a> sidebar.</p>
+    <p class="credits">The code is available at <a href="https://github.com/bani/MemeThis">GitHub</a>.</p>
+    <p class="credits">We'd also like to thank the following people:</p>
+    <ul>
+    <li><a href="http://meme.yahoo.com/fabiogiolito/">Fabio Giolito</a></li>
+    <li><a href="http://meme.yahoo.com/acarlos1000/">Antonio Carlos Silveira</a></li>
+    </ul>
+</div>
 </div>
 
-  </body>
+
+
+</div>
+</div>
+
+</body>
 </html>

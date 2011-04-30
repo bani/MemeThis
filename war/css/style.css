@@ -1,80 +1,82 @@
+
 body {
-    font-family:Georgia,Serif;
-    font-size:1.1em;
-    margin:0px;
-    padding:0px;
-    border:0px;
-    background-color:#853eaa;
+	background: url("../img/memethis-header-bg.png");
+    background-repeat:repeat-x;
+    color: #535353;
+    font-family: "Lucida Grande", Lucida, Verdana, Helvetica, sans-serif;
+    font-size: 76%;
+    margin: 0;
 }
 
-.memethis{display:block}
-.memethis *{
-  display:block;
-  height:1px;
-  overflow:hidden;
-  font-size:.01em;
-  background:#FFFFFF}
-.memethis1{
-  margin-left:3px;
-  margin-right:3px;
-  padding-left:1px;
-  padding-right:1px;
-  border-left:1px solid #b990ce;
-  border-right:1px solid #b990ce;
-  background:#e0cee9}
-.memethis2{
-  margin-left:1px;
-  margin-right:1px;
-  padding-right:1px;
-  padding-left:1px;
-  border-left:1px solid #9151b2;
-  border-right:1px solid #9151b2;
-  background:#e7daee}
-.memethis3{
-  margin-left:1px;
-  margin-right:1px;
-  border-left:1px solid #e7daee;
-  border-right:1px solid #e7daee;}
-.memethis4{
-  border-left:1px solid #b990ce;
-  border-right:1px solid #b990ce}
-.memethis5{
-  border-left:1px solid #e0cee9;
-  border-right:1px solid #e0cee9}
-.memethisfg{
-  background:#FFFFFF}
+div.success {
+    font-size: 1.1em;
+}
+
+div#header {
+    clear: both;
+    display: inline;
+    float: left;
+    height: 220px;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+div.container {
+    clear: both;
+    margin: 0 auto;
+    padding: 0;
+    width: 920px;
+    z-index: 100;
+}
 
 #content {
-	max-width:1000px;
 	align:center;
     margin:36px auto 36px auto;
     padding:12px 24px 12px 24px;
-    background-color:#853eaa;
+}
+
+div.col {
+    display: inline;
+    float: left;
+    margin: 0 20px 0 0;
+    padding: 0;
+}
+
+div.tpl-2col .col1 {
+    margin: 0 40px 0 0;
+    width: 440px;
+}
+div.tpl-2col .col2 {
+    margin: 0;
+    width: 440px;
 }
 
 a {
-    color:#853eaa;
+    color:#6c3661;
 }
 
-h3 {
-/*    text-align: center;*/
-    font-size:1.4em;
-   font-style: italic;
-   margin-top:0px;
-   margin-bottom:0px;
+p {
+    margin-top: 0px;
+    text-align: left;
 }
 
-h4 {
-   font-style: italic;
-   margin-left:16px;
+p.action {
+    text-align: center;
+    margin-top: 64px;
 }
 
-h5 {
-   font-style: italic;
-   margin-left:36px;
+p.subtitle {
+	text-align: center;
+    margin-top: 5px;
 }
 
-
-p,li {
-    margin-left:40px;
+div.content hr {
+    background-color: #DDDDDD;
+    border: 0 none;
+    color: #DDDDDD;
+    float: left;
+    height: 1px;
+    margin: 30px 0 20px;
+    text-align: left;
+    width: 100%;
 }
