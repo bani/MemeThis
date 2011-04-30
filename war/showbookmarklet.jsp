@@ -45,6 +45,9 @@
 <h5>Firefox / Safari</h5>
 <ul><li>Drag the button above to your Bookmarks Toolbar.</li></ul>
 
+<h5>Chrome</h5>
+<ul><li>Drag this link &lt;<a onclick="return false;" href="<%=request.getAttribute("bookmarklet")%>">MemeThis</a>&gt; to the Bookmarks Bar.</li></ul>
+
 <h5>Opera</h5>
 <ul><li>Drag the button above to your Personal Bar.</li></ul>
 
